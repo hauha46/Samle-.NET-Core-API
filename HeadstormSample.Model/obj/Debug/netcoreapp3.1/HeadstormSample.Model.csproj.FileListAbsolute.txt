@@ -1,0 +1,9 @@
+D:\Headstorm\Personal SIG\HeadstormSample\HeadstormSample.Model\bin\Debug\netcoreapp3.1\HeadstormSample.Model.deps.json
+D:\Headstorm\Personal SIG\HeadstormSample\HeadstormSample.Model\bin\Debug\netcoreapp3.1\HeadstormSample.Model.dll
+D:\Headstorm\Personal SIG\HeadstormSample\HeadstormSample.Model\bin\Debug\netcoreapp3.1\HeadstormSample.Model.pdb
+D:\Headstorm\Personal SIG\HeadstormSample\HeadstormSample.Model\obj\Debug\netcoreapp3.1\HeadstormSample.Model.csprojAssemblyReference.cache
+D:\Headstorm\Personal SIG\HeadstormSample\HeadstormSample.Model\obj\Debug\netcoreapp3.1\HeadstormSample.Model.AssemblyInfoInputs.cache
+D:\Headstorm\Personal SIG\HeadstormSample\HeadstormSample.Model\obj\Debug\netcoreapp3.1\HeadstormSample.Model.AssemblyInfo.cs
+D:\Headstorm\Personal SIG\HeadstormSample\HeadstormSample.Model\obj\Debug\netcoreapp3.1\HeadstormSample.Model.csproj.CoreCompileInputs.cache
+D:\Headstorm\Personal SIG\HeadstormSample\HeadstormSample.Model\obj\Debug\netcoreapp3.1\HeadstormSample.Model.dll
+D:\Headstorm\Personal SIG\HeadstormSample\HeadstormSample.Model\obj\Debug\netcoreapp3.1\HeadstormSample.Model.pdb

@@ -1,0 +1,15 @@
+D:\Headstorm\Personal SIG\HeadstormSample\HeadstormSample.DataAccess\bin\Debug\netcoreapp3.1\HeadstormSample.DataAccess.deps.json
+D:\Headstorm\Personal SIG\HeadstormSample\HeadstormSample.DataAccess\bin\Debug\netcoreapp3.1\HeadstormSample.DataAccess.runtimeconfig.json
+D:\Headstorm\Personal SIG\HeadstormSample\HeadstormSample.DataAccess\bin\Debug\netcoreapp3.1\HeadstormSample.DataAccess.runtimeconfig.dev.json
+D:\Headstorm\Personal SIG\HeadstormSample\HeadstormSample.DataAccess\bin\Debug\netcoreapp3.1\HeadstormSample.DataAccess.dll
+D:\Headstorm\Personal SIG\HeadstormSample\HeadstormSample.DataAccess\bin\Debug\netcoreapp3.1\HeadstormSample.DataAccess.pdb
+D:\Headstorm\Personal SIG\HeadstormSample\HeadstormSample.DataAccess\bin\Debug\netcoreapp3.1\HeadstormSample.Model.dll
+D:\Headstorm\Personal SIG\HeadstormSample\HeadstormSample.DataAccess\bin\Debug\netcoreapp3.1\HeadstormSample.Model.pdb
+D:\Headstorm\Personal SIG\HeadstormSample\HeadstormSample.DataAccess\obj\Debug\netcoreapp3.1\HeadstormSample.DataAccess.csprojAssemblyReference.cache
+D:\Headstorm\Personal SIG\HeadstormSample\HeadstormSample.DataAccess\obj\Debug\netcoreapp3.1\HeadstormSample.DataAccess.AssemblyInfoInputs.cache
+D:\Headstorm\Personal SIG\HeadstormSample\HeadstormSample.DataAccess\obj\Debug\netcoreapp3.1\HeadstormSample.DataAccess.AssemblyInfo.cs
+D:\Headstorm\Personal SIG\HeadstormSample\HeadstormSample.DataAccess\obj\Debug\netcoreapp3.1\HeadstormSample.DataAccess.csproj.CoreCompileInputs.cache
+D:\Headstorm\Personal SIG\HeadstormSample\HeadstormSample.DataAccess\obj\Debug\netcoreapp3.1\HeadstormSample.DataAccess.csproj.CopyComplete
+D:\Headstorm\Personal SIG\HeadstormSample\HeadstormSample.DataAccess\obj\Debug\netcoreapp3.1\HeadstormSample.DataAccess.dll
+D:\Headstorm\Personal SIG\HeadstormSample\HeadstormSample.DataAccess\obj\Debug\netcoreapp3.1\HeadstormSample.DataAccess.pdb
+D:\Headstorm\Personal SIG\HeadstormSample\HeadstormSample.DataAccess\obj\Debug\netcoreapp3.1\HeadstormSample.DataAccess.genruntimeconfig.cache

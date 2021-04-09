@@ -1,0 +1,197 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Headstorm\\Personal SIG\\HeadstormSample\\HeadstormSample.BusinessLogic\\HeadstormSample.BusinessLogic.csproj": {}
+  },
+  "projects": {
+    "D:\\Headstorm\\Personal SIG\\HeadstormSample\\HeadstormSample.BusinessLogic\\HeadstormSample.BusinessLogic.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Headstorm\\Personal SIG\\HeadstormSample\\HeadstormSample.BusinessLogic\\HeadstormSample.BusinessLogic.csproj",
+        "projectName": "HeadstormSample.BusinessLogic",
+        "projectPath": "D:\\Headstorm\\Personal SIG\\HeadstormSample\\HeadstormSample.BusinessLogic\\HeadstormSample.BusinessLogic.csproj",
+        "packagesPath": "C:\\Users\\thuha\\.nuget\\packages\\",
+        "outputPath": "D:\\Headstorm\\Personal SIG\\HeadstormSample\\HeadstormSample.BusinessLogic\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\thuha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "D:\\Headstorm\\Personal SIG\\HeadstormSample\\HeadstormSample.DataAccess\\HeadstormSample.DataAccess.csproj": {
+                "projectPath": "D:\\Headstorm\\Personal SIG\\HeadstormSample\\HeadstormSample.DataAccess\\HeadstormSample.DataAccess.csproj"
+              },
+              "D:\\Headstorm\\Personal SIG\\HeadstormSample\\HeadstormSample.Model\\HeadstormSample.Model.csproj": {
+                "projectPath": "D:\\Headstorm\\Personal SIG\\HeadstormSample\\HeadstormSample.Model\\HeadstormSample.Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Headstorm\\Personal SIG\\HeadstormSample\\HeadstormSample.DataAccess\\HeadstormSample.DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Headstorm\\Personal SIG\\HeadstormSample\\HeadstormSample.DataAccess\\HeadstormSample.DataAccess.csproj",
+        "projectName": "HeadstormSample.DataAccess",
+        "projectPath": "D:\\Headstorm\\Personal SIG\\HeadstormSample\\HeadstormSample.DataAccess\\HeadstormSample.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\thuha\\.nuget\\packages\\",
+        "outputPath": "D:\\Headstorm\\Personal SIG\\HeadstormSample\\HeadstormSample.DataAccess\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\thuha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "D:\\Headstorm\\Personal SIG\\HeadstormSample\\HeadstormSample.Model\\HeadstormSample.Model.csproj": {
+                "projectPath": "D:\\Headstorm\\Personal SIG\\HeadstormSample\\HeadstormSample.Model\\HeadstormSample.Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Headstorm\\Personal SIG\\HeadstormSample\\HeadstormSample.Model\\HeadstormSample.Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Headstorm\\Personal SIG\\HeadstormSample\\HeadstormSample.Model\\HeadstormSample.Model.csproj",
+        "projectName": "HeadstormSample.Model",
+        "projectPath": "D:\\Headstorm\\Personal SIG\\HeadstormSample\\HeadstormSample.Model\\HeadstormSample.Model.csproj",
+        "packagesPath": "C:\\Users\\thuha\\.nuget\\packages\\",
+        "outputPath": "D:\\Headstorm\\Personal SIG\\HeadstormSample\\HeadstormSample.Model\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\thuha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

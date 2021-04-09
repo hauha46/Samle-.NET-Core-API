@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HeadstormSample.DataAccess\HeadstormSample.DataAccess.csproj" />
+    <ProjectReference Include="..\HeadstormSample.Model\HeadstormSample.Model.csproj" />
+  </ItemGroup>
+
+</Project>

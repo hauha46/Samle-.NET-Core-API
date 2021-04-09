@@ -1,0 +1,14 @@
+D:\Headstorm\Personal SIG\HeadstormSample\HeadstormSample.BusinessLogic\bin\Debug\netcoreapp3.1\HeadstormSample.BusinessLogic.deps.json
+D:\Headstorm\Personal SIG\HeadstormSample\HeadstormSample.BusinessLogic\bin\Debug\netcoreapp3.1\HeadstormSample.BusinessLogic.dll
+D:\Headstorm\Personal SIG\HeadstormSample\HeadstormSample.BusinessLogic\bin\Debug\netcoreapp3.1\HeadstormSample.BusinessLogic.pdb
+D:\Headstorm\Personal SIG\HeadstormSample\HeadstormSample.BusinessLogic\bin\Debug\netcoreapp3.1\HeadstormSample.DataAccess.dll
+D:\Headstorm\Personal SIG\HeadstormSample\HeadstormSample.BusinessLogic\bin\Debug\netcoreapp3.1\HeadstormSample.Model.dll
+D:\Headstorm\Personal SIG\HeadstormSample\HeadstormSample.BusinessLogic\bin\Debug\netcoreapp3.1\HeadstormSample.DataAccess.pdb
+D:\Headstorm\Personal SIG\HeadstormSample\HeadstormSample.BusinessLogic\bin\Debug\netcoreapp3.1\HeadstormSample.Model.pdb
+D:\Headstorm\Personal SIG\HeadstormSample\HeadstormSample.BusinessLogic\obj\Debug\netcoreapp3.1\HeadstormSample.BusinessLogic.csprojAssemblyReference.cache
+D:\Headstorm\Personal SIG\HeadstormSample\HeadstormSample.BusinessLogic\obj\Debug\netcoreapp3.1\HeadstormSample.BusinessLogic.AssemblyInfoInputs.cache
+D:\Headstorm\Personal SIG\HeadstormSample\HeadstormSample.BusinessLogic\obj\Debug\netcoreapp3.1\HeadstormSample.BusinessLogic.AssemblyInfo.cs
+D:\Headstorm\Personal SIG\HeadstormSample\HeadstormSample.BusinessLogic\obj\Debug\netcoreapp3.1\HeadstormSample.BusinessLogic.csproj.CoreCompileInputs.cache
+D:\Headstorm\Personal SIG\HeadstormSample\HeadstormSample.BusinessLogic\obj\Debug\netcoreapp3.1\HeadstormSample.BusinessLogic.csproj.CopyComplete
+D:\Headstorm\Personal SIG\HeadstormSample\HeadstormSample.BusinessLogic\obj\Debug\netcoreapp3.1\HeadstormSample.BusinessLogic.dll
+D:\Headstorm\Personal SIG\HeadstormSample\HeadstormSample.BusinessLogic\obj\Debug\netcoreapp3.1\HeadstormSample.BusinessLogic.pdb

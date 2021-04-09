@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <WarningLevel>0</WarningLevel>
+    <DocumentationFile>D:\Headstorm\Personal SIG\HeadstormSample\HeadstormSample\HeadstormSample.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HeadstormSample.BusinessLogic\HeadstormSample.BusinessLogic.csproj" />
+    <ProjectReference Include="..\HeadstormSample.Model\HeadstormSample.Model.csproj" />
+  </ItemGroup>
+
+
+</Project>

@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HeadstormSample</name>
+    </assembly>
+    <members>
+        <member name="M:HeadstormSample.Controllers.EmployeeController.AddEmployee(HeadstormSample.Model.Employee)">
+            <summary>
+            Add en employee into the database
+            </summary>
+            <param name="employee"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HeadstormSample.Controllers.EmployeeController.GetEmployeeById(System.Int32)">
+            <summary>
+            Get the employee with the given Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HeadstormSample.Controllers.EmployeeController.GetAllEmployee">
+            <summary>
+            Get all available Employee
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HeadstormSample.Controllers.EmployeeController.UpdateEmployee(HeadstormSample.Model.Employee)">
+            <summary>
+            Update an employee with matching Id
+            </summary>
+            <param name="employee"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HeadstormSample.Controllers.EmployeeController.RemoveEmployee(HeadstormSample.Model.Employee)">
+            <summary>
+            Remove an employee from the database
+            </summary>
+            <param name="employee"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HeadstormSample.Controllers.EnrollmentController.AddEnrollment(HeadstormSample.Model.Enrollment)">
+            <summary>
+            Add a new enrollment into the database
+            </summary>
+            <param name="enrollment"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HeadstormSample.Controllers.EnrollmentController.GetAllEmployeeInSIG(System.Int32)">
+            <summary>
+            Get all employee belong to a given SIGId
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HeadstormSample.Controllers.EnrollmentController.GetAllSIGFromEmployee(System.Int32)">
+            <summary>
+            Get all SIG participated by the given EmployeeId
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HeadstormSample.Controllers.EnrollmentController.RemoveEnrollment(HeadstormSample.Model.Enrollment)">
+            <summary>
+            Remove an enrollment from the database
+            </summary>
+            <param name="enrollment"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HeadstormSample.Controllers.SIGController.AddSIG(HeadstormSample.Model.SIG)">
+            <summary>
+            Add a new SIG into the database
+            </summary>
+            <param name="sig"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HeadstormSample.Controllers.SIGController.GetSIGById(System.Int32)">
+            <summary>
+            Get a SIG with the given Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HeadstormSample.Controllers.SIGController.GetAllSIG">
+            <summary>
+            Get all available SIG in the database
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HeadstormSample.Controllers.SIGController.UpdateSIG(HeadstormSample.Model.SIG)">
+            <summary>
+            Update a SIG with matching Id
+            </summary>
+            <param name="sig"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HeadstormSample.Controllers.SIGController.RemoveSIG(HeadstormSample.Model.SIG)">
+            <summary>
+            Remove a SIG from the database
+            </summary>
+            <param name="sig"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

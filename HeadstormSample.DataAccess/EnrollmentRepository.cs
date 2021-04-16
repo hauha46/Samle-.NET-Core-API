@@ -10,9 +10,9 @@ namespace HeadstormSample.DataAccess
     public class EnrollmentRepository : IRepository<Enrollment>
     {
         private HeadstormSampleContext _context;
-        public EnrollmentRepository()
+        public EnrollmentRepository(HeadstormSampleContext context)
         {
-            this._context = new HeadstormSampleContext();
+            this._context = context;
         }
 
         public async Task<Enrollment> Add(Enrollment entity)
@@ -22,7 +22,7 @@ namespace HeadstormSample.DataAccess
             return entity;
         }
 
-        public async Task<List<Enrollment>> GetAll()
+        public async Task<ICollection<Enrollment>> GetAll()
         {
             return await this._context.Enrollments.Include(i => i.Employee).Include(i => i.SIG).ToListAsync();
         }

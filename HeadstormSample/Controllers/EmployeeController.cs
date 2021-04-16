@@ -13,10 +13,10 @@ namespace HeadstormSample.Controllers
     [ApiController]
     public class EmployeeController : ControllerBase
     {
-        private IEmployeeBusiness employeeBusiness;
-        public EmployeeController()
+        private IEmployeeBusiness _employeeBusiness;
+        public EmployeeController(EmployeeBusiness employeeBusiness)
         {
-            this.employeeBusiness = new EmployeeBusiness();
+            this._employeeBusiness = employeeBusiness;
         }
 
         /// <summary>
@@ -29,7 +29,7 @@ namespace HeadstormSample.Controllers
         public async Task<ActionResult> AddEmployee(Employee employee)
         {
             if (!ModelState.IsValid) return BadRequest("Invalid Input");
-            Employee response = await this.employeeBusiness.AddEmployee(employee);
+            Employee response = await this._employeeBusiness.AddEmployee(employee);
             return new ObjectResult(response) { StatusCode = StatusCodes.Status201Created };
         }
 
@@ -42,7 +42,7 @@ namespace HeadstormSample.Controllers
         [Route("{id}")]
         public async Task<ActionResult<Employee>> GetEmployeeById(int id)
         {
-            Employee response =  await this.employeeBusiness.GetEmployeeById(id);
+            Employee response =  await this._employeeBusiness.GetEmployeeById(id);
             return Ok(response);
         }
 
@@ -53,7 +53,7 @@ namespace HeadstormSample.Controllers
         [HttpGet]
         public async Task<ActionResult<List<Employee>>> GetAllEmployee()
         {
-            var response = await this.employeeBusiness.GetAllEmployee();
+            var response = await this._employeeBusiness.GetAllEmployee();
             return Ok(response);
         }
         /// <summary>
@@ -65,9 +65,9 @@ namespace HeadstormSample.Controllers
         [Route("update")]
         public async Task<ActionResult> UpdateEmployee(Employee employee)
         {
-            Employee check = await this.employeeBusiness.GetEmployeeById(employee.Id);
+            Employee check = await this._employeeBusiness.GetEmployeeById(employee.Id);
             if (check == null) return BadRequest("Invalid Input");
-            Employee response = await this.employeeBusiness.UpdateEmployee(employee);
+            Employee response = await this._employeeBusiness.UpdateEmployee(employee);
             return Ok(response);
         }
 
@@ -80,9 +80,9 @@ namespace HeadstormSample.Controllers
         [Route("delete")]
         public async Task<ActionResult> RemoveEmployee(Employee employee)
         {
-            Employee check = await this.employeeBusiness.GetEmployeeById(employee.Id);
+            Employee check = await this._employeeBusiness.GetEmployeeById(employee.Id);
             if (check == null) return BadRequest("Invalid Input");
-            Employee reponse = await this.employeeBusiness.RemoveEmployee(employee);
+            Employee reponse = await this._employeeBusiness.RemoveEmployee(employee);
             return Ok(reponse);
         }
 

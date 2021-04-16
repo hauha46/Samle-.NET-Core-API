@@ -18,7 +18,7 @@ namespace HeadstormSample.BusinessLogic
         /// Get all available entity in the database of type Employee
         /// </summary>
         /// <returns>Returns a list of Employee</returns>
-        Task<List<Employee>> GetAllEmployee();
+        Task<ICollection<Employee>> GetAllEmployee();
         /// <summary>
         /// Add a new Employee into the database
         /// </summary>

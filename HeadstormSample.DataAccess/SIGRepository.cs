@@ -10,9 +10,9 @@ namespace HeadstormSample.DataAccess
     public class SIGRepository : IRepository<SIG>
     {
         private HeadstormSampleContext _context;
-        public SIGRepository()
+        public SIGRepository(HeadstormSampleContext context)
         {
-            this._context = new HeadstormSampleContext();
+            this._context = context;
         }
 
         public async Task<SIG> Add(SIG entity)
@@ -22,7 +22,7 @@ namespace HeadstormSample.DataAccess
             return entity;
         }
 
-        public async Task<List<SIG>> GetAll()
+        public async Task<ICollection<SIG>> GetAll()
         {
             return await this._context.SIGs.ToListAsync();
         }

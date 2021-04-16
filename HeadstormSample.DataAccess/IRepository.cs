@@ -18,7 +18,7 @@ namespace HeadstormSample.DataAccess
         /// Get all available entities type T
         /// </summary>
         /// <returns></returns>
-        Task<List<T>> GetAll();
+        Task<ICollection<T>> GetAll();
         /// <summary>
         /// Add a new entity into the database
         /// </summary>

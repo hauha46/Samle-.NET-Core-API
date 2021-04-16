@@ -11,9 +11,9 @@ namespace HeadstormSample.DataAccess
     public class EmployeeRepository : IRepository<Employee>
     {
         private HeadstormSampleContext _context;
-        public EmployeeRepository()
+        public EmployeeRepository(HeadstormSampleContext context)
         {
-            this._context = new HeadstormSampleContext();
+            this._context = context;
         }
 
         public async Task<Employee> Add(Employee entity)
@@ -23,7 +23,7 @@ namespace HeadstormSample.DataAccess
             return entity; 
         }
 
-        public async Task<List<Employee>> GetAll()
+        public async Task<ICollection<Employee>> GetAll()
         {     
             return await this._context.Employees.ToListAsync(); 
         }

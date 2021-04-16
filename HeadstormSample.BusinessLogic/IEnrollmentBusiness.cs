@@ -32,13 +32,13 @@ namespace HeadstormSample.BusinessLogic
         /// </summary>
         /// <param name="SIGId"></param>
         /// <returns>Returns a list of employee participate in the given SIG</returns>
-        Task<List<Employee>> GetAllEmployeeInSIG(int SIGId);
+        Task<ICollection<Employee>> GetAllEmployeeInSIG(int SIGId);
         /// <summary>
         /// Get all SIG that an employee participates in with given EmployeeId
         /// </summary>
         /// <param name="EmployeeId"></param>
         /// <returns>Returns a list of SIG participated by the given employee</returns>
-        Task<List<SIG>> GetAllSIGFromEmployee(int EmployeeId);
+        Task<ICollection<SIG>> GetAllSIGFromEmployee(int EmployeeId);
         /// <summary>
         /// Remove an enrollment from the database
         /// </summary>

@@ -6,9 +6,15 @@ namespace HeadstormSample.DataAccess
 {
     public class HeadstormSampleContext : DbContext
     {
+
+        public HeadstormSampleContext(DbContextOptions<HeadstormSampleContext> options)
+        : base(options)
+        {
+
+        }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server = MSI; Database = Headstorm; Trusted_Connection = True");
+            //optionsBuilder.UseSqlServer("Server = MSI; Database = Headstorm; Trusted_Connection = True");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

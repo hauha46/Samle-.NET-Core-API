@@ -10,45 +10,47 @@ namespace HeadstormSample.BusinessLogic
 {
     public class EnrollmentBusiness : IEnrollmentBusiness
     {
-        IRepository<Enrollment> enrollmentRepository;
-        public EnrollmentBusiness()
+        private IRepository<Enrollment> _enrollmentRepository;
+        public EnrollmentBusiness(EnrollmentRepository enrollmentRepository)
         {
-            this.enrollmentRepository = new EnrollmentRepository();
+            this._enrollmentRepository = enrollmentRepository;
         }
 
         public async Task<Boolean> CheckDuplicate(Enrollment enrollment)
         {
-            List<Enrollment> enrollments = await enrollmentRepository.GetAll();
+            ICollection<Enrollment> enrollments = await _enrollmentRepository.GetAll();
             return enrollments.Where(i => i.EmployeeId == enrollment.EmployeeId && i.SIGId == enrollment.SIGId).FirstOrDefault() != null ? true : false;
         }
         public async Task<Enrollment> AddEnrollment(Enrollment entity)
         {
-            return await this.enrollmentRepository.Add(entity);
+            return await this._enrollmentRepository.Add(entity);
         }
 
-        public async Task<List<Employee>> GetAllEmployeeInSIG(int SIGId)
+        public async Task<ICollection<Employee>> GetAllEmployeeInSIG(int SIGId)
         {
-            List<Enrollment> enrollments = await enrollmentRepository.GetAll();
-            List<Employee> employees = (from enrollment in enrollments where enrollment.SIGId == SIGId select enrollment.Employee).ToList();
+            ICollection<Enrollment> enrollments = await _enrollmentRepository.GetAll();
+            List<Employee> employees = enrollments.Where(i => i.SIGId == SIGId).Select(i => i.Employee).ToList();
+            //List<Employee> employees = (from enrollment in enrollments where enrollment.SIGId == SIGId select enrollment.Employee).ToList();
             return employees;
         }
 
-        public async Task<List<SIG>> GetAllSIGFromEmployee(int EmployeeId)
+        public async Task<ICollection<SIG>> GetAllSIGFromEmployee(int EmployeeId)
         {
-            List<Enrollment> enrollments = await enrollmentRepository.GetAll();
-            List<SIG> SIGs = (from enrollment in enrollments where enrollment.EmployeeId == EmployeeId select enrollment.SIG).ToList();
+            ICollection<Enrollment> enrollments = await _enrollmentRepository.GetAll();
+            List<SIG> SIGs = enrollments.Where(i => i.EmployeeId == EmployeeId).Select(i => i.SIG).ToList();
+            //List<SIG> SIGs = (from enrollment in enrollments where enrollment.EmployeeId == EmployeeId select enrollment.SIG).ToList();
             return SIGs;
         }
 
         public async Task<Enrollment> GetEnrollment(int EmployeeId, int SIGId)
         {
-            List<Enrollment> enrollments = await enrollmentRepository.GetAll();
+            ICollection<Enrollment> enrollments = await _enrollmentRepository.GetAll();
             return enrollments.FirstOrDefault(i => i.EmployeeId == EmployeeId && i.SIGId == SIGId);
         }
 
         public async Task<Enrollment> RemoveEnrollment(Enrollment entity)
         {
-            return await this.enrollmentRepository.Remove(entity);
+            return await this._enrollmentRepository.Remove(entity);
         }
     }
 }

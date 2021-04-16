@@ -14,7 +14,7 @@ namespace HeadstormSample.Controllers
     public class EmployeeController : ControllerBase
     {
         private IEmployeeBusiness _employeeBusiness;
-        public EmployeeController(EmployeeBusiness employeeBusiness)
+        public EmployeeController(IEmployeeBusiness employeeBusiness)
         {
             this._employeeBusiness = employeeBusiness;
         }

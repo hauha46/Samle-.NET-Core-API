@@ -11,7 +11,7 @@ namespace HeadstormSample.BusinessLogic
     public class EnrollmentBusiness : IEnrollmentBusiness
     {
         private IRepository<Enrollment> _enrollmentRepository;
-        public EnrollmentBusiness(EnrollmentRepository enrollmentRepository)
+        public EnrollmentBusiness(IRepository<Enrollment> enrollmentRepository)
         {
             this._enrollmentRepository = enrollmentRepository;
         }

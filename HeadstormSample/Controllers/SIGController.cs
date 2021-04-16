@@ -15,7 +15,7 @@ namespace HeadstormSample.Controllers
     {
 
         private ISIGBusiness _sIGBusiness;
-        public SIGController(SIGBusiness sIGBusiness)
+        public SIGController(ISIGBusiness sIGBusiness)
         {
             this._sIGBusiness = sIGBusiness;
         }

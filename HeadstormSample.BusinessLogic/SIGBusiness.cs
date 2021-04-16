@@ -10,7 +10,7 @@ namespace HeadstormSample.BusinessLogic
     public class SIGBusiness : ISIGBusiness
     {
         private IRepository<SIG> _sIGRepository;
-        public SIGBusiness(SIGRepository sIGRepository)
+        public SIGBusiness(IRepository<SIG> sIGRepository)
         {
             this._sIGRepository = sIGRepository;
         }

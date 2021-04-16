@@ -16,7 +16,7 @@ namespace HeadstormSample.Controllers
         private IEnrollmentBusiness _enrollmentBusiness;
         private IEmployeeBusiness _employeeBusiness;
         private ISIGBusiness _sIGBusiness;
-        public EnrollmentController(EnrollmentBusiness enrollmentBusiness, EmployeeBusiness employeeBusiness, SIGBusiness sIGBusiness)
+        public EnrollmentController(IEnrollmentBusiness enrollmentBusiness, IEmployeeBusiness employeeBusiness, ISIGBusiness sIGBusiness)
         {
             this._enrollmentBusiness = enrollmentBusiness;
             this._employeeBusiness = employeeBusiness;

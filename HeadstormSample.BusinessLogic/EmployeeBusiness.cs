@@ -10,7 +10,7 @@ namespace HeadstormSample.BusinessLogic
     {
         private IRepository<Employee> _employeeRepository;
 
-        public EmployeeBusiness(EmployeeRepository employeeRepository)
+        public EmployeeBusiness(IRepository<Employee> employeeRepository)
         {
             this._employeeRepository = employeeRepository;
         }

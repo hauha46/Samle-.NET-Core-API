@@ -9,35 +9,35 @@ namespace HeadstormSample.BusinessLogic
 {
     public class SIGBusiness : ISIGBusiness
     {
-        IRepository<SIG> sIGRepository;
-        public SIGBusiness()
+        private IRepository<SIG> _sIGRepository;
+        public SIGBusiness(IRepository<SIG> sIGRepository)
         {
-            this.sIGRepository = new SIGRepository();
+            this._sIGRepository = sIGRepository;
         }
 
         public async Task<SIG> AddSIG(SIG entity)
         {
-            return await this.sIGRepository.Add(entity);
+            return await this._sIGRepository.Add(entity);
         }
 
-        public async Task<List<SIG>> GetAllSIG()
+        public async Task<ICollection<SIG>> GetAllSIG()
         {
-            return await this.sIGRepository.GetAll();
+            return await this._sIGRepository.GetAll();
         }
 
         public async Task<SIG> GetSIGById(int id)
         {
-            return await this.sIGRepository.GetById(id);
+            return await this._sIGRepository.GetById(id);
         }
 
         public async Task<SIG> RemoveSIG(SIG entity)
         {
-            return await this.sIGRepository.Remove(entity);
+            return await this._sIGRepository.Remove(entity);
         }
 
         public async Task<SIG> UpdateSIG(SIG entity)
         {
-            return await this.sIGRepository.Update(entity);
+            return await this._sIGRepository.Update(entity);
         }
     }
 }

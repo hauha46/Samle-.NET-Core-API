@@ -14,10 +14,10 @@ namespace HeadstormSample.Controllers
     public class SIGController : ControllerBase
     {
 
-        private ISIGBusiness sIGBusiness;
-        public SIGController()
+        private ISIGBusiness _sIGBusiness;
+        public SIGController(ISIGBusiness sIGBusiness)
         {
-            this.sIGBusiness = new SIGBusiness();
+            this._sIGBusiness = sIGBusiness;
         }
         /// <summary>
         /// Add a new SIG into the database
@@ -29,7 +29,7 @@ namespace HeadstormSample.Controllers
         public async Task<ActionResult> AddSIG(SIG sig)
         {
             if (!ModelState.IsValid) return BadRequest("Invalid Input");
-            SIG response = await this.sIGBusiness.AddSIG(sig);
+            SIG response = await this._sIGBusiness.AddSIG(sig);
             return new ObjectResult(response) { StatusCode = StatusCodes.Status201Created };
         }
 
@@ -42,7 +42,7 @@ namespace HeadstormSample.Controllers
         [Route("{id}")]
         public async Task<ActionResult<SIG>> GetSIGById(int id)
         {
-            SIG response = await this.sIGBusiness.GetSIGById(id);
+            SIG response = await this._sIGBusiness.GetSIGById(id);
             return Ok(response);
         }
 
@@ -53,7 +53,7 @@ namespace HeadstormSample.Controllers
         [HttpGet]
         public async Task<ActionResult<List<SIG>>> GetAllSIG()
         {
-            var response = await this.sIGBusiness.GetAllSIG();
+            var response = await this._sIGBusiness.GetAllSIG();
             return Ok(response);
         }
 
@@ -66,9 +66,9 @@ namespace HeadstormSample.Controllers
         [Route("update")]
         public async Task<ActionResult> UpdateSIG(SIG sig)
         {
-            SIG check = await this.sIGBusiness.GetSIGById(sig.Id);
+            SIG check = await this._sIGBusiness.GetSIGById(sig.Id);
             if (check == null) return BadRequest("Invalid Input");
-            SIG response = await this.sIGBusiness.UpdateSIG(sig);
+            SIG response = await this._sIGBusiness.UpdateSIG(sig);
             return Ok(response);
         }
 
@@ -81,9 +81,9 @@ namespace HeadstormSample.Controllers
         [Route("delete")]
         public async Task<ActionResult> RemoveSIG(SIG sig)
         {
-            SIG check = await this.sIGBusiness.GetSIGById(sig.Id);
+            SIG check = await this._sIGBusiness.GetSIGById(sig.Id);
             if (check == null) return BadRequest("Invalid Input");
-            SIG reponse = await this.sIGBusiness.RemoveSIG(sig);
+            SIG reponse = await this._sIGBusiness.RemoveSIG(sig);
             return Ok(reponse);
         }
     }

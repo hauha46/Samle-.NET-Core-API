@@ -13,14 +13,14 @@ namespace HeadstormSample.Controllers
     [ApiController]
     public class EnrollmentController : ControllerBase
     {
-        private IEnrollmentBusiness enrollmentBusiness;
-        private IEmployeeBusiness employeeBusiness;
-        private ISIGBusiness sIGBusiness;
-        public EnrollmentController()
+        private IEnrollmentBusiness _enrollmentBusiness;
+        private IEmployeeBusiness _employeeBusiness;
+        private ISIGBusiness _sIGBusiness;
+        public EnrollmentController(IEnrollmentBusiness enrollmentBusiness, IEmployeeBusiness employeeBusiness, ISIGBusiness sIGBusiness)
         {
-            this.enrollmentBusiness = new EnrollmentBusiness();
-            this.employeeBusiness = new EmployeeBusiness();
-            this.sIGBusiness = new SIGBusiness();
+            this._enrollmentBusiness = enrollmentBusiness;
+            this._employeeBusiness = employeeBusiness;
+            this._sIGBusiness = sIGBusiness;
         }
 
         /// <summary>
@@ -33,8 +33,8 @@ namespace HeadstormSample.Controllers
         public async Task<ActionResult> AddEnrollment(Enrollment enrollment)
         {
             if (!ModelState.IsValid) return BadRequest("Invalid Input");
-            if (this.enrollmentBusiness.CheckDuplicate(enrollment).Result) return BadRequest("Enrollment existed");
-            Enrollment response = await this.enrollmentBusiness.AddEnrollment(enrollment);
+            if (this._enrollmentBusiness.CheckDuplicate(enrollment).Result) return BadRequest("Enrollment existed");
+            Enrollment response = await this._enrollmentBusiness.AddEnrollment(enrollment);
             return new ObjectResult(response){ StatusCode = StatusCodes.Status201Created};
         }
 
@@ -47,9 +47,9 @@ namespace HeadstormSample.Controllers
         [Route("getEmployee/{id}")]
         public async Task<ActionResult<List<Employee>>> GetAllEmployeeInSIG(int id)
         {
-            SIG check = await this.sIGBusiness.GetSIGById(id);
+            SIG check = await this._sIGBusiness.GetSIGById(id);
             if (check == null) return BadRequest("Invalid Input");
-            var response = await this.enrollmentBusiness.GetAllEmployeeInSIG(id);
+            var response = await this._enrollmentBusiness.GetAllEmployeeInSIG(id);
             return Ok(response);
         }
 
@@ -62,9 +62,9 @@ namespace HeadstormSample.Controllers
         [Route("getSIG/{id}")]
         public async Task<ActionResult<List<SIG>>> GetAllSIGFromEmployee(int id)
         {
-            Employee check = await this.employeeBusiness.GetEmployeeById(id);
+            Employee check = await this._employeeBusiness.GetEmployeeById(id);
             if (check == null) return BadRequest("Invalid Input");
-            var response = await this.enrollmentBusiness.GetAllSIGFromEmployee(id);
+            var response = await this._enrollmentBusiness.GetAllSIGFromEmployee(id);
             return Ok(response);
         }
 
@@ -76,7 +76,7 @@ namespace HeadstormSample.Controllers
         [HttpDelete]
         public async Task<ActionResult> RemoveEnrollment(Enrollment enrollment)
         {
-            Enrollment response = await this.enrollmentBusiness.RemoveEnrollment(enrollment);
+            Enrollment response = await this._enrollmentBusiness.RemoveEnrollment(enrollment);
             return Ok(response);
         }
     }

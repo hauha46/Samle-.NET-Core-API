@@ -18,7 +18,7 @@ namespace HeadstormSample.BusinessLogic
         /// Get all available SIG in the database
         /// </summary>
         /// <returns>Returns a list of SIG</returns>
-        Task<List<SIG>> GetAllSIG();
+        Task<ICollection<SIG>> GetAllSIG();
         /// <summary>
         /// Add a new SIG into the database
         /// </summary>
